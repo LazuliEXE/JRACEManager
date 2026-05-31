@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="10"
+      xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="fr.lhsa.controller.EventDetailsController">
+
+    <children>
+
+        <Label text="Détail événement"/>
+
+        <Label fx:id="eventName"/>
+
+        <Label fx:id="eventDate"/>
+
+    </children>
+
+    <Button text="Modifier"
+            onAction="#editEvent"/>
+</VBox>

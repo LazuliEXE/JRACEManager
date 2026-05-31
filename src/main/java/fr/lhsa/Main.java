@@ -1,19 +1,21 @@
 package fr.lhsa;
 
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 public class Main extends Application {
     @Override
-    public void start(Stage stage) {
+    public void start(Stage stage) throws Exception {
 
-        Label label = new Label("JRESManager");
+        FXMLLoader loader = new FXMLLoader(
+                getClass().getResource("/view/main-view.fxml")
+        );
 
-        Scene scene = new Scene(label, 800, 600);
+        Scene scene = new Scene(loader.load(), 1200, 700);
 
-        stage.setTitle("JRESManager");
+        stage.setTitle("Club LHSA Manager");
         stage.setScene(scene);
         stage.show();
     }

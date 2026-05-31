@@ -1,4 +1,8 @@
 package fr.lhsa.model;
 
-public class Gender {
+public enum Gender {
+
+    MALE,
+    FEMALE,
+    MIXTE
 }

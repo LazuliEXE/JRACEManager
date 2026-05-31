@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="fr.lhsa.controller.MainController">
+    <!-- Sidebar -->
+    <left>
+        <VBox spacing="10"
+              prefWidth="200"
+              style="-fx-background-color: #2C3E50; -fx-padding: 15;">
+
+            <Label text="Club LHSA"
+                   style="-fx-text-fill: white; -fx-font-size: 20px;"/>
+
+            <Button text="Dashboard"
+                    onAction="#showDashboard"/>
+
+            <Button text="Événements"
+                    onAction="#showEvents"/>
+
+            <Button text="Courses"
+                    onAction="#showCourses"/>
+
+            <Button text="Coureurs"
+                    onAction="#showCoureurs"/>
+
+            <Button text="Inscriptions"
+                    onAction="#showRegistrations"/>
+
+        </VBox>
+    </left>
+
+    <center>
+        <StackPane fx:id="contentArea"/>
+    </center>
+
+</BorderPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="10"
+      xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="fr.lhsa.controller.EventFormController">
+
+    <children>
+
+        <Label text="Créer un événement"/>
+
+        <TextField fx:id="nameField"
+                   promptText="Nom de l'événement"/>
+
+        <TextField fx:id="locationField"
+                   promptText="Lieu"/>
+
+        <TextField fx:id="postalCodeField"
+                   promptText="Code postal"/>
+
+        <DatePicker fx:id="datePicker"/>
+
+        <DatePicker fx:id="dateFinPicker"/>
+
+        <Button text="Créer"
+                onAction="#saveEvent"/>
+
+    </children>
+
+</VBox>
