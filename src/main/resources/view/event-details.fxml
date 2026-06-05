@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
 
 <VBox spacing="10"
       xmlns="http://javafx.com/javafx/21"
@@ -16,8 +17,15 @@
 
         <Label fx:id="eventDate"/>
 
+        <Button text="Modifier"
+                onAction="#editEvent"/>
+
+        <Button text="Voir les courses"
+                onAction="#showRaces"/>
+
+        <Button text="Supprimer"
+                onAction="#deleteEvent"/>
+
     </children>
 
-    <Button text="Modifier"
-            onAction="#editEvent"/>
 </VBox>

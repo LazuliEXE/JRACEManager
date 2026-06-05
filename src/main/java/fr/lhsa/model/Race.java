@@ -31,7 +31,7 @@ public class Race {
 
     private Event event;
 
-    private List<Coureur> coureurs = new ArrayList<>();
+    private List<Registration> registrations = new ArrayList<>();
 
     public Race() {
     }
@@ -48,11 +48,14 @@ public class Race {
                 Category categoryMin,
                 int nbCoureurParInscription,
                 Event event) {
-        this.id = id;
-        this.name = name;
-        this.distance = distance;
-
-        this.event = event;
+        this.date = date;
+        this.heureLancement = heureLancement;
+        this.dossardStart = dossardStart;
+        this.dossardEnd = dossardEnd;
+        this.dossardLitigeStart = dossardLitigeStart;
+        this.dossardLitigeEnd = dossardLitigeEnd;
+        this.categoryMin = categoryMin;
+        this.nbCoureurParInscription = nbCoureurParInscription;
     }
 
     public int getId() {
@@ -151,7 +154,7 @@ public class Race {
         this.event = event;
     }
 
-    public List<Coureur> getCoureurs() {
-        return coureurs;
+    public List<Registration> getRegistrations() {
+        return registrations;
     }
 }

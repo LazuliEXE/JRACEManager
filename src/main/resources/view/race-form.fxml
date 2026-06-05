@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="fr.lhsa.controller.RaceFormController"
+      spacing="10"
+      alignment="CENTER">
+
+    <Label text="Création d'une course"
+           style="-fx-font-size: 24px;" />
+
+    <TextField fx:id="nameField"
+               promptText="Nom de la course"/>
+
+    <TextField fx:id="distanceField"
+               promptText="Distance (km)"/>
+
+    <DatePicker fx:id="datePicker"/>
+
+    <TextField fx:id="timeField"
+               promptText="Heure (HH:mm)"/>
+
+    <Button text="Enregistrer"
+            onAction="#saveRace"/>
+
+</VBox>

@@ -50,15 +50,6 @@ public class EventsController {
                 new PropertyValueFactory<>("date")
         );
 
-        /*
-         * Chargement des données
-         */
-
-        ObservableList<Event> events =
-                FXCollections.observableArrayList(
-                        DataManager.getEvents()
-                );
-
         refreshTable();
 
         /*

@@ -91,5 +91,5 @@ public class EventFormController {
         SceneManager.loadPage("events.fxml");
     }
 
-    private Event editingEvent;
+    private Event editingEvent = EventSession.getSelectedEvent();
 }

@@ -49,4 +49,10 @@ public class EventDetailsController {
 
         SceneManager.loadPage("event-form.fxml");
     }
+
+    @FXML
+    private void showRaces() {
+
+        SceneManager.loadPage("races.fxml");
+    }
 }

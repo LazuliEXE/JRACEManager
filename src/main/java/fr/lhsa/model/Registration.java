@@ -4,30 +4,34 @@ public class Registration {
 
     private int id;
 
+    private Team team;
+
     private Coureur coureur;
 
     private Race race;
 
     private int bibNumber;
 
-    private Double chrono;
+    private Long chronoMs;
 
     public Registration() {
     }
 
     public Registration(
             int id,
+            Team team,
             Coureur coureur,
             Race race,
             int bibNumber,
-            Double chrono
+            Long chronoMs
     ) {
 
         this.id = id;
+        this.team = team;
         this.coureur = coureur;
         this.race = race;
         this.bibNumber = bibNumber;
-        this.chrono = chrono;
+        this.chronoMs = chronoMs;
     }
 
     public int getId() {
@@ -38,6 +42,10 @@ public class Registration {
         return coureur;
     }
 
+    public Team getTeam() {
+        return team;
+    }
+
     public Race getRace() {
         return race;
     }
@@ -46,8 +54,8 @@ public class Registration {
         return bibNumber;
     }
 
-    public Double getChrono() {
-        return chrono;
+    public Long getChronoMs() {
+        return chronoMs;
     }
 
     public void setId(int id) {
@@ -58,6 +66,10 @@ public class Registration {
         this.coureur = coureur;
     }
 
+    public void setTeam(Team team) {
+        this.team = team;
+    }
+
     public void setRace(Race race) {
         this.race = race;
     }
@@ -66,7 +78,7 @@ public class Registration {
         this.bibNumber = bibNumber;
     }
 
-    public void setChrono(Double chrono) {
-        this.chrono = chrono;
+    public void setChronoMs(Long chronoMs) {
+        this.chronoMs = chronoMs;
     }
 }
